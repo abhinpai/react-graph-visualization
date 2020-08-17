@@ -1,19 +1,18 @@
-.footer{
-    display: flex;
-    height: 2.5rem;
-    width: 100%;
-    background-color: var(--dark-secondarkColor);
-    bottom: 0;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
+.footer {
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  background-color: var(--dark-secondarkColor);
+  bottom: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
 
-    & span{
-        
-        padding: 0 12px;
-    }
+  & span {
+    padding: 0 12px;
+  }
 
-    & span:first-child {
-        margin-left: auto;  
-    }
+  & span:first-child {
+    margin-left: auto;
+  }
 }

@@ -1,15 +1,32 @@
+@mixin commonAlignment {
+  padding-left: 8px;
+  
+}
+
 .inspectorPane {
   flex: 0.3;
   background-color: var(--dark-sidePanelColor);
-  padding: 18px 8px;
+  padding: 16px 8px;
   -webkit-box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
   box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
-
-  & p {
+  overflow: auto;
+  
+  &__header {
     font-weight: 500;
     margin: 0;
-    padding-left: 8px;
     font-size: 1.2rem;
+  }
+}
+
+.properties {
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__value{
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
