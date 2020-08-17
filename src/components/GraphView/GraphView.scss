@@ -1,0 +1,11 @@
+.graphView{
+    display: flex;
+    height: 100vh;
+    top: 3rem;
+    position: relative;;
+
+    &__graph{
+        flex: auto;
+        background: red;
+    }
+}
