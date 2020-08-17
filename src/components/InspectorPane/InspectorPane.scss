@@ -1,4 +1,15 @@
 .inspectorPane {
   flex: 0.3;
-  background-color: royalblue;
+  background-color: var(--dark-sidePanelColor);
+  padding: 18px 8px;
+  -webkit-box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
+
+  & p {
+    font-weight: 500;
+    margin: 0;
+    padding-left: 8px;
+    font-size: 1.2rem;
+  }
 }

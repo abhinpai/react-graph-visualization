@@ -1,4 +1,13 @@
-.configurePane{
-    flex: 0.3;
-    background-color: skyblue;
+.configurePane {
+  flex: 0.3;
+  background-color: var(--dark-sidePanelColor);
+  padding: 18px 8px;
+  -webkit-box-shadow: 15px 0px 15px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 0px 15px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 0px 15px -20px rgba(0, 0, 0, 0.75);
+
+  & p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
 }

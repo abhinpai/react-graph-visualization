@@ -8,7 +8,7 @@ function GraphView() {
     <div className='graphView'>
       <ConfigurePane />
       <div className='graphView__graph'>
-        <h2>Graph</h2>
+        {/* <h2>Graph</h2> */}
       </div>
       <InspectorPane />
     </div>
