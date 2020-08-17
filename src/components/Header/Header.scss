@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  background-color: var(--dark-secondarkColor);
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+
+  & input {
+    margin-right: 30px;
+    background-color: var(--dark-tertioryColor);
+    border-radius: 12px;
+    outline: none;
+    color: gray;
+    width: 40%;
+    padding: 8px;
+    padding-left: 12px;
+    border-color: transparent;
+  }
+}

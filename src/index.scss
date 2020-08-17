@@ -1,3 +1,20 @@
+:root {
+  --dark-primaryColor: #1a172f;
+  --dark-secondarkColor: #2d2444;
+  --dark-tertioryColor: #241f39;
+  --dark-primaryFontColor: white;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
+  background-color: var(--dark-primaryColor);
+  color: var(--dark-primaryFontColor);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
