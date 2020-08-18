@@ -1,0 +1,507 @@
+{
+    "nodes":[
+        {
+          "id": "fe9f3712-000f-4396-99c3-a7dbf96ae752",
+          "name": "Leslie",
+          "label": "Hardy",
+          "description": "Commodo excepteur officia laborum ad. Aliqua sunt ullamco occaecat laborum Lorem anim. Magna culpa ad reprehenderit amet in nostrud dolor quis deserunt nulla nulla. Et aliquip est proident labore tempor.\r\n",
+          "type": "iot.Element",
+          "datatype": "Boolean",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "e600ddbc-21bf-472a-898e-7602ece5db98",
+          "name": "Riley",
+          "label": "Laurel",
+          "description": "Minim ipsum deserunt tempor veniam occaecat reprehenderit anim est voluptate. Sit dolore voluptate incididunt proident mollit nulla occaecat. Dolor commodo officia deserunt aute. Aliquip qui esse eiusmod irure id dolor qui excepteur laboris aute elit non. Ex ut enim mollit enim ad sit deserunt et do aliqua elit officia ex commodo. Nisi tempor duis exercitation ea eu pariatur elit qui. Proident occaecat laboris aliquip est et commodo irure exercitation id ullamco veniam.\r\n",
+          "type": "iot.Region",
+          "datatype": "Boolean",
+          "color": "#2ECC71",
+          "graphtype": "node"
+        },
+        {
+          "id": "99e94c15-5ab4-4ba9-a39b-ab4f4a451038",
+          "name": "Claire",
+          "label": "Boyer",
+          "description": "Sunt minim ut quis eiusmod mollit amet elit sit cupidatat id sint. Aliquip veniam dolor elit proident consequat velit sit est. Aliqua anim aliqua nostrud eu incididunt proident incididunt ipsum reprehenderit dolore nisi sunt dolor id. Voluptate excepteur tempor ullamco nulla elit culpa quis sint ut sunt officia laborum. Dolor deserunt in Lorem ut elit ad in officia non enim voluptate sit eu. Quis non eu non irure irure ex. Ea laboris ad cillum voluptate duis magna enim incididunt ad culpa ex laborum cupidatat eu.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "Boolean",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "5834baf6-1dab-4ebd-94d5-328d1d4e9067",
+          "name": "Meadows",
+          "label": "Bright",
+          "description": "Amet minim non amet aliquip. Sit laborum id est id minim tempor Lorem quis amet mollit excepteur. Irure elit aliqua dolore incididunt eiusmod consectetur laboris dolore ipsum exercitation exercitation. Veniam qui magna eiusmod nisi ullamco pariatur ea et sint id. In sit esse laborum aliqua officia exercitation consequat pariatur. Aliqua voluptate nostrud qui non consequat ullamco sit.\r\n",
+          "type": "iot.Asset",
+          "datatype": "Other",
+          "color": "#2ECC71",
+          "graphtype": "node"
+        },
+        {
+          "id": "01c72e6a-4d0c-42ad-b6d7-5b8d06dd9886",
+          "name": "Julia",
+          "label": "Tyler",
+          "description": "Occaecat fugiat et commodo aliqua aliquip eu culpa. Fugiat elit pariatur eu cillum eu amet irure incididunt est ullamco. Exercitation proident fugiat minim fugiat dolore adipisicing mollit labore veniam velit eu deserunt.\r\n",
+          "type": "iot.Element",
+          "datatype": "enum",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "d1de1129-e6f3-4628-ad4d-ef4405f25f22",
+          "name": "Gwendolyn",
+          "label": "Tabatha",
+          "description": "Nisi anim esse enim amet do nostrud reprehenderit ut. Eiusmod pariatur ipsum velit labore ut magna esse. Ea excepteur incididunt reprehenderit sint. Adipisicing enim excepteur consequat excepteur excepteur adipisicing. Aliqua qui aute velit ad. Quis non adipisicing sit nulla sunt culpa elit et minim non incididunt nostrud.\r\n",
+          "type": "iot.Space",
+          "datatype": "enum",
+          "color": "#f64700",
+          "graphtype": "node"
+        },
+        {
+          "id": "40d57319-ccea-46e3-9499-973157834998",
+          "name": "Blake",
+          "label": "Amie",
+          "description": "Excepteur est excepteur labore nisi Lorem et excepteur non. Do reprehenderit nostrud pariatur incididunt elit sit. Veniam quis ea sint duis aute aliqua. Amet sit Lorem id voluptate anim elit minim sunt fugiat.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "String",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "19b37961-1268-4f38-b0ff-9c821c7634e2",
+          "name": "Charity",
+          "label": "Iva",
+          "description": "Commodo veniam tempor veniam enim mollit dolor. Consectetur ullamco qui sint pariatur minim. Occaecat non cillum esse enim consectetur et qui laboris laborum. Sit Lorem sit aute consequat mollit incididunt reprehenderit id aute reprehenderit. Sint ut velit voluptate ex velit incididunt in est et proident ex. Quis exercitation laborum non ex. Est irure aute minim adipisicing veniam ex exercitation cillum aute ullamco sit tempor ipsum.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "NUmber",
+          "color": "#D11D72",
+          "graphtype": "node"
+        },
+        {
+          "id": "0fe39caa-81bb-4831-aa69-74675c0338a9",
+          "name": "Sparks",
+          "label": "Christian",
+          "description": "Irure excepteur exercitation proident anim laborum. Non ex Lorem fugiat magna esse aliquip qui laboris laboris. Eu incididunt commodo minim ullamco non. Lorem nisi aliqua sint excepteur.\r\n",
+          "type": "iot.AttributeValue",
+          "datatype": "NUmber",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "330c7beb-aa0d-4eff-a2fd-071466ea0952",
+          "name": "Delgado",
+          "label": "Bianca",
+          "description": "Sunt sunt incididunt dolor sunt excepteur reprehenderit qui ullamco ipsum laboris duis. Eiusmod reprehenderit ipsum do sunt quis commodo velit nostrud quis sint excepteur commodo. Amet culpa velit amet proident ullamco enim voluptate tempor enim cupidatat magna tempor. Sunt ipsum deserunt non quis ex anim nulla nisi pariatur. Veniam eu veniam proident consequat nostrud voluptate duis ad qui amet.\r\n",
+          "type": "iot.Asset",
+          "datatype": "Other",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "21205d31-5fc8-43e7-ac03-98c661ed17f1",
+          "name": "Kirsten",
+          "label": "Alana",
+          "description": "Labore cillum aliqua nulla sunt Lorem elit Lorem. Deserunt aliquip sint anim aliquip aliquip nisi irure. Pariatur elit sunt eu proident et nisi amet. Ut qui pariatur ullamco mollit cillum reprehenderit deserunt aliqua. Ullamco deserunt qui culpa tempor irure irure aute pariatur sint tempor. Sunt et dolor pariatur laborum ullamco et magna sint eiusmod. Magna reprehenderit aliquip aute ullamco qui.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "Other",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "8f5fcf82-25a4-4bb2-b80c-fc764a301dd1",
+          "name": "Witt",
+          "label": "Essie",
+          "description": "Ut ad eiusmod labore adipisicing Lorem. Cillum exercitation dolor ea voluptate elit dolor deserunt ut ullamco nisi reprehenderit nulla. Deserunt tempor ad minim aute reprehenderit veniam ut qui.\r\n",
+          "type": "iot.Country",
+          "datatype": "Other",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "bc8c9716-5db4-40ba-9d8a-110ba668000b",
+          "name": "Flowers",
+          "label": "Kaufman",
+          "description": "Cupidatat fugiat consectetur esse ea consectetur incididunt Lorem laboris dolor anim officia excepteur. Aliquip cupidatat aliquip nisi laborum consequat duis reprehenderit incididunt qui ea in incididunt sunt. Magna occaecat ut ea sint quis Lorem magna sint cupidatat cillum sunt occaecat. Officia Lorem culpa esse irure consequat. Et amet Lorem elit dolor in voluptate dolore enim velit. Ea est exercitation elit minim dolore fugiat fugiat consequat Lorem aliquip.\r\n",
+          "type": "iot.Space",
+          "datatype": "Boolean",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "a471b791-1d86-4327-a6fa-399202b406ef",
+          "name": "Sara",
+          "label": "Olsen",
+          "description": "Minim duis velit laboris velit voluptate veniam labore proident cupidatat. Sint mollit incididunt pariatur proident ut ullamco ullamco pariatur cupidatat duis exercitation id amet. Eu voluptate adipisicing tempor nulla nisi. Ad eiusmod cupidatat proident quis eu non anim irure in cillum exercitation consequat commodo. Culpa mollit officia occaecat laborum pariatur eiusmod ut sint consequat dolor sunt.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "String",
+          "color": "#f64700",
+          "graphtype": "node"
+        },
+        {
+          "id": "7a077384-47bc-418c-b82e-f1fd5299e164",
+          "name": "Joyce",
+          "label": "Tami",
+          "description": "Nisi quis aliqua nisi deserunt quis Lorem non pariatur. Culpa anim minim pariatur eiusmod labore non enim. Do proident commodo aliquip ea ut ex enim tempor aliqua ullamco.\r\n",
+          "type": "iot.Site",
+          "datatype": "enum",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "fd1539f5-785b-4b41-b3c4-2edc848c57c3",
+          "name": "Felecia",
+          "label": "Kerri",
+          "description": "Proident deserunt voluptate sunt culpa dolor ipsum ipsum esse reprehenderit laboris id veniam dolor. Aliquip dolore laborum veniam quis ullamco elit laborum. Id ipsum nulla veniam fugiat incididunt elit aliqua sint veniam culpa irure consectetur. Magna adipisicing et pariatur eu amet consectetur deserunt ipsum dolor et officia veniam eu. Et deserunt adipisicing incididunt duis magna consectetur proident fugiat consequat laboris et.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "Other",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "aceb75af-1e94-44cc-9ffa-1b595e08a08a",
+          "name": "Karin",
+          "label": "Mcclain",
+          "description": "Sit aliqua eiusmod proident id officia cupidatat Lorem excepteur quis eu. Deserunt eu consequat in dolor ullamco. Et exercitation proident exercitation pariatur est Lorem laborum. Ea et nisi nisi elit. In aliquip duis consectetur duis pariatur qui. Irure non cillum labore ea commodo eiusmod id est ut nulla cupidatat. Occaecat sunt anim qui quis cupidatat elit labore dolor ut pariatur non veniam fugiat.\r\n",
+          "type": "iot.Asset",
+          "datatype": "String",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "3b3ab7a1-f07a-4066-a008-eef54cb88488",
+          "name": "Jannie",
+          "label": "Miranda",
+          "description": "Ut non ipsum dolore excepteur veniam consectetur aute ea amet id Lorem minim. Reprehenderit dolor sit consectetur aliqua. Sit sit adipisicing ex sit aute. Occaecat incididunt nisi aliquip elit esse fugiat occaecat exercitation nulla ut.\r\n",
+          "type": "iot.Element",
+          "datatype": "Boolean",
+          "color": "#2ECC71",
+          "graphtype": "node"
+        },
+        {
+          "id": "779f965d-dcb7-4e02-b86d-6468d30d0f3b",
+          "name": "Vonda",
+          "label": "Earlene",
+          "description": "Irure nulla excepteur anim magna minim aliquip irure. Laborum nisi ea veniam reprehenderit reprehenderit do fugiat. Id Lorem cillum deserunt pariatur nisi amet consequat labore ex elit commodo. Proident aliqua commodo dolore quis quis tempor amet consequat esse laborum enim consectetur veniam laborum. Reprehenderit quis Lorem deserunt sint consectetur quis. Laborum elit mollit sint labore magna.\r\n",
+          "type": "iot.Region",
+          "datatype": "NUmber",
+          "color": "#f64700",
+          "graphtype": "node"
+        },
+        {
+          "id": "6f6f42bb-c35a-4acd-a66d-237988dbee8c",
+          "name": "Mckay",
+          "label": "Tran",
+          "description": "Culpa ea pariatur irure velit excepteur et eiusmod in proident ut aliquip consequat laboris. Velit commodo consequat nostrud pariatur proident incididunt enim proident. Commodo commodo tempor do est duis qui. Officia elit aute mollit culpa eiusmod ea pariatur sit aute excepteur amet commodo quis.\r\n",
+          "type": "iot.Asset",
+          "datatype": "enum",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "977c3d64-2f74-4036-8fd9-936e8a89e738",
+          "name": "Campbell",
+          "label": "Vance",
+          "description": "Cillum anim commodo elit id nisi amet velit voluptate quis. Deserunt deserunt culpa sit minim cupidatat id consectetur incididunt eu. Aliquip laboris ea labore culpa ex excepteur elit laborum nulla enim aliquip. Adipisicing sint dolore magna magna.\r\n",
+          "type": "iot.Point",
+          "datatype": "NUmber",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "b3082388-c684-4c3c-8c6a-4c285db6b9c9",
+          "name": "Riddle",
+          "label": "Jewel",
+          "description": "Magna eu id in id veniam quis tempor deserunt do pariatur occaecat. Nostrud aliqua deserunt aliqua esse labore et culpa. Dolore non nulla in Lorem anim eu occaecat id exercitation amet aute in commodo aute. Consectetur laboris qui elit commodo incididunt cupidatat nisi pariatur ad commodo pariatur nisi pariatur. Proident est reprehenderit anim est fugiat anim nulla irure sit.\r\n",
+          "type": "iot.Point",
+          "datatype": "String",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "22446d30-d206-4d1f-b769-ab69545802c1",
+          "name": "Young",
+          "label": "Briggs",
+          "description": "Eiusmod exercitation exercitation ex eu consectetur anim laboris. Consectetur consectetur aute aute Lorem commodo aliqua eu occaecat voluptate quis commodo. Anim pariatur proident fugiat ullamco culpa ut in nisi excepteur. Duis elit dolor ullamco nisi ad cupidatat ut amet laboris dolor aliqua fugiat nulla. Sint laboris in ut eu laboris cupidatat.\r\n",
+          "type": "iot.Element",
+          "datatype": "String",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "05e4e568-508d-4736-945e-c7ddc55876d1",
+          "name": "Doyle",
+          "label": "Kelley",
+          "description": "Minim reprehenderit ex enim Lorem ipsum excepteur eiusmod ea duis. Officia incididunt cupidatat dolore nulla nulla sint nostrud eiusmod minim elit est id proident eiusmod. Id consequat pariatur do dolor aliqua cillum exercitation nulla pariatur incididunt. Cillum fugiat Lorem enim excepteur esse cillum.\r\n",
+          "type": "hvac.Chiller",
+          "datatype": "String",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "e59c1632-368d-4b03-be9b-a4a04d3d2e31",
+          "name": "Mullen",
+          "label": "Lloyd",
+          "description": "Dolor nostrud pariatur mollit ut cillum proident eu ipsum velit excepteur. Excepteur fugiat excepteur do consectetur dolor non et sunt excepteur exercitation aliquip. Qui ad occaecat non aute quis commodo ex. Incididunt in consectetur excepteur ipsum eiusmod commodo ea. Nostrud eu nisi dolore in irure nostrud velit.\r\n",
+          "type": "iot.Element",
+          "datatype": "Other",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "7ab775aa-d34f-4c1e-bee5-7da460f729e5",
+          "name": "Maynard",
+          "label": "Angelina",
+          "description": "Pariatur nostrud ipsum Lorem labore voluptate elit dolore pariatur reprehenderit magna eiusmod nulla amet commodo. Ut enim voluptate Lorem ad officia incididunt in ad. Adipisicing sunt et dolor cupidatat exercitation eiusmod fugiat laborum labore. Fugiat nostrud laboris do labore mollit non consectetur nulla non aute do.\r\n",
+          "type": "iot.AttributeValue",
+          "datatype": "enum",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "5bdac367-fcca-4cc9-988c-d77568c3f76f",
+          "name": "Louise",
+          "label": "Freeman",
+          "description": "Laborum qui elit non cillum id minim adipisicing reprehenderit labore ipsum occaecat cillum fugiat veniam. Eiusmod veniam occaecat velit incididunt elit velit nostrud. Dolore dolor excepteur tempor sint consequat ea ad irure cupidatat sit. Adipisicing consequat mollit ex consequat sunt nisi magna laborum consequat aliqua. Tempor est cillum aute duis reprehenderit nisi exercitation duis tempor ea amet mollit exercitation irure. Et ex ullamco ipsum veniam laboris aliqua incididunt eu nisi. Officia officia ullamco qui est.\r\n",
+          "type": "iot.Point",
+          "datatype": "Other",
+          "color": "#f64700",
+          "graphtype": "node"
+        },
+        {
+          "id": "3138fac3-7593-44c6-aa0b-589064fb8e68",
+          "name": "Sargent",
+          "label": "Aline",
+          "description": "Do occaecat consequat sint quis esse aliqua ut. Dolor incididunt incididunt ipsum nisi minim ea cupidatat dolore proident ipsum id sunt. Aliqua in incididunt elit dolor elit minim ullamco dolore consectetur. Fugiat culpa minim ea consectetur excepteur nulla aute reprehenderit. Ullamco exercitation consectetur esse non commodo reprehenderit non. Incididunt ex labore proident consectetur ea sit proident excepteur ex. Sunt nisi qui ea quis labore.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "Boolean",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "1b917d90-8e5c-4c76-9170-f28ebe83bc3d",
+          "name": "Pollard",
+          "label": "Valdez",
+          "description": "Anim tempor deserunt esse sunt deserunt duis culpa. Reprehenderit cupidatat sit duis tempor veniam dolore sunt minim pariatur magna ad ad culpa ea. Cupidatat id deserunt cupidatat qui mollit ut irure nisi.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "String",
+          "color": "#2ECC71",
+          "graphtype": "node"
+        },
+        {
+          "id": "c44c4f5b-83a2-421f-a27c-70d46c4fba19",
+          "name": "Emilia",
+          "label": "Lee",
+          "description": "Proident pariatur dolor commodo adipisicing ad elit Lorem aute. Veniam nisi do sit commodo tempor. Ea voluptate officia irure deserunt consequat minim culpa magna eu est consectetur exercitation ut enim. Anim tempor duis exercitation et tempor occaecat ad deserunt voluptate nulla. Consequat cupidatat et aliquip mollit nulla amet amet magna proident sint voluptate nostrud commodo labore. Sint officia est officia ullamco fugiat pariatur do ut.\r\n",
+          "type": "iot.Asset",
+          "datatype": "enum",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "725642ad-0f25-49ed-b521-8a474bc78293",
+          "name": "James",
+          "label": "Dolores",
+          "description": "Nostrud pariatur pariatur ipsum amet in minim ea nisi ipsum aute velit. Nulla voluptate duis id aute consectetur do. Ullamco labore labore dolor nostrud pariatur laboris quis do duis tempor commodo incididunt pariatur.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "enum",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "4a4d7a02-6147-4c66-9094-2baa0e095dea",
+          "name": "Carmen",
+          "label": "Letitia",
+          "description": "Mollit mollit ea incididunt occaecat nostrud occaecat. Cillum commodo voluptate ad ipsum ullamco laborum dolore dolor amet dolor voluptate minim ipsum quis. Aute est esse in quis aute fugiat aliqua.\r\n",
+          "type": "hvac.AirhandlingUnit",
+          "datatype": "Other",
+          "color": "#f64700",
+          "graphtype": "node"
+        },
+        {
+          "id": "a1687481-45c9-4559-8229-fc87e9cb71a0",
+          "name": "Farley",
+          "label": "Avery",
+          "description": "Qui in et laboris ad. Aliqua nostrud aliquip excepteur aliquip cupidatat consequat duis in minim sunt. Tempor ut exercitation voluptate minim sit. In anim sunt ad esse deserunt commodo occaecat ea ex veniam labore. Ea nulla exercitation velit dolor nostrud esse ullamco. Laborum magna incididunt amet pariatur veniam id cillum tempor.\r\n",
+          "type": "iot.Country",
+          "datatype": "NUmber",
+          "color": "#D11D72",
+          "graphtype": "node"
+        },
+        {
+          "id": "54b55c0d-ef44-48b2-b703-6876c69a13d8",
+          "name": "Sykes",
+          "label": "Ivy",
+          "description": "Dolore aliquip tempor ex qui aliquip et ullamco nostrud. Magna tempor duis adipisicing nisi. Non veniam minim cillum laborum aliquip irure dolore aute et esse mollit. Pariatur magna cupidatat deserunt dolore nulla fugiat laborum. Veniam in cupidatat non exercitation ex elit pariatur ex cillum et exercitation.\r\n",
+          "type": "iot.Point",
+          "datatype": "Other",
+          "color": "#D11D72",
+          "graphtype": "node"
+        },
+        {
+          "id": "a382191b-34c8-45fc-963f-82e4f800a617",
+          "name": "Houston",
+          "label": "Morales",
+          "description": "Proident cillum sunt reprehenderit excepteur ea ex sint veniam sint non. Irure occaecat ad velit sunt sunt officia mollit non esse ex officia mollit. Nulla qui commodo ad dolore officia elit fugiat nostrud exercitation qui laborum irure enim deserunt.\r\n",
+          "type": "iot.Region",
+          "datatype": "String",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "0fc33b4b-8633-4a83-826d-d132900ec357",
+          "name": "Bean",
+          "label": "Jillian",
+          "description": "Culpa consequat anim qui sint enim ex. Mollit excepteur incididunt anim non esse consequat officia consequat dolore velit do. Amet exercitation aute incididunt deserunt commodo anim. Elit reprehenderit consequat sint cillum eu dolor. Lorem et quis nulla Lorem ad nostrud occaecat cupidatat incididunt.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "enum",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "3e28d6b9-a1f5-4e3a-9a9f-6103f0df662c",
+          "name": "Glover",
+          "label": "Lorie",
+          "description": "Labore voluptate laborum tempor cupidatat aute quis duis ullamco commodo cupidatat in nostrud Lorem. In nulla ea ipsum amet sunt id est. Irure est in excepteur commodo elit pariatur proident do officia enim. Consectetur esse dolore dolor aliquip et anim exercitation. In magna commodo pariatur sint. Eu duis commodo proident anim consectetur occaecat laboris sit mollit magna. Duis aliqua eu ut consectetur labore.\r\n",
+          "type": "iot.AttributeValue",
+          "datatype": "String",
+          "color": "#D11D72",
+          "graphtype": "node"
+        },
+        {
+          "id": "6b8b1b8e-ecd4-4dc2-bcb9-e123fa0d59b6",
+          "name": "Renee",
+          "label": "Gray",
+          "description": "Cillum veniam sunt labore ullamco eiusmod voluptate. Et laboris minim consectetur labore tempor sint duis eu. Lorem fugiat aute ex sunt magna fugiat proident ut. Elit exercitation laboris elit proident nostrud fugiat nulla.\r\n",
+          "type": "iot.AttributeValue",
+          "datatype": "String",
+          "color": "#D11D72",
+          "graphtype": "node"
+        },
+        {
+          "id": "324a9dd4-b273-4998-b67c-6debbb18d6b7",
+          "name": "Dianna",
+          "label": "Marilyn",
+          "description": "Ex labore nulla magna Lorem et dolore non tempor consectetur culpa nulla. Dolore minim deserunt esse ut exercitation exercitation. Sint voluptate Lorem aliqua minim proident ut consequat excepteur eu. Proident aute ex et in pariatur nostrud non incididunt anim eu nostrud aliqua id. Nostrud fugiat dolor mollit irure labore ullamco cupidatat non consectetur eiusmod. Occaecat et aliquip pariatur dolor culpa aliquip veniam aliqua adipisicing ad. Duis consequat aliquip reprehenderit ullamco amet aute amet voluptate consequat laboris aliqua elit pariatur cupidatat.\r\n",
+          "type": "iot.Point",
+          "datatype": "String",
+          "color": "#0090d9",
+          "graphtype": "node"
+        },
+        {
+          "id": "ab1fc6de-3247-4358-815f-eab530306b3b",
+          "name": "Bradshaw",
+          "label": "Arnold",
+          "description": "Quis anim do enim sit minim labore dolore in fugiat exercitation laboris reprehenderit id veniam. Ea est amet fugiat qui labore aute exercitation labore ea ut culpa. Fugiat ad culpa qui sunt. Ipsum fugiat non occaecat consequat laboris qui aute Lorem consectetur exercitation culpa. Consequat excepteur tempor non fugiat consequat in.\r\n",
+          "type": "iot.Site",
+          "datatype": "NUmber",
+          "color": "#2ECC71",
+          "graphtype": "node"
+        },
+        {
+          "id": "645b4337-114d-4563-9a40-ef3c1701a196",
+          "name": "Grace",
+          "label": "Allie",
+          "description": "Labore quis irure consequat adipisicing cillum laboris fugiat Lorem sunt qui ex ipsum id. Duis veniam et aliqua deserunt sit voluptate incididunt laborum laborum esse aliqua. Mollit culpa aliquip irure amet amet do nisi exercitation. Tempor dolor cupidatat quis ea commodo laborum anim eiusmod aliqua consequat consectetur ipsum laboris. Culpa proident labore pariatur velit mollit qui et.\r\n",
+          "type": "iot.Space",
+          "datatype": "NUmber",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "4d42bdad-b45d-49ff-918b-9e4b677fdbbc",
+          "name": "Kris",
+          "label": "Casey",
+          "description": "Et tempor exercitation sint enim ex nostrud minim reprehenderit occaecat officia. Velit reprehenderit officia sit nostrud nulla commodo ut dolore ullamco magna elit. Consequat id occaecat minim labore magna cillum reprehenderit sit. Laborum consectetur aute id velit. Ipsum reprehenderit sint tempor commodo proident. Excepteur excepteur minim aute deserunt ex. Occaecat minim do labore officia commodo consectetur magna velit.\r\n",
+          "type": "iot.AttributeValue",
+          "datatype": "String",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "0fe926bd-d627-486d-98c1-1d912734e3c1",
+          "name": "Langley",
+          "label": "Deann",
+          "description": "Nulla qui officia anim aliqua dolore cupidatat ut velit qui labore. Excepteur consectetur consectetur excepteur ea elit ipsum culpa excepteur enim. Irure culpa deserunt occaecat deserunt reprehenderit deserunt elit.\r\n",
+          "type": "iot.Point",
+          "datatype": "enum",
+          "color": "#2ECC71",
+          "graphtype": "node"
+        },
+        {
+          "id": "42efa82e-7ac9-4029-bc1a-925b59b1a5be",
+          "name": "Ericka",
+          "label": "Felicia",
+          "description": "Excepteur duis enim minim cupidatat anim qui veniam tempor excepteur veniam et laboris. Ipsum incididunt voluptate sit sint aliqua et nostrud nisi Lorem duis. Excepteur ea magna culpa et in consectetur. Laboris irure elit in amet aute minim. Velit ipsum ea commodo enim culpa occaecat minim irure duis.\r\n",
+          "type": "iot.Asset",
+          "datatype": "Other",
+          "color": "#f2ad00",
+          "graphtype": "node"
+        },
+        {
+          "id": "0fa630b7-6d53-4818-861d-ace71abccf45",
+          "name": "Alvarez",
+          "label": "Perkins",
+          "description": "Laborum commodo exercitation nisi magna cillum voluptate cillum officia quis pariatur minim. Tempor mollit esse laboris incididunt proident laborum occaecat non esse aliqua. Eiusmod cillum sit occaecat officia non adipisicing tempor proident ipsum elit in fugiat laborum sit.\r\n",
+          "type": "iot.Point",
+          "datatype": "enum",
+          "color": "#f64700",
+          "graphtype": "node"
+        },
+        {
+          "id": "2a150d16-bdb3-46e7-b033-7201c6793b0d",
+          "name": "Lydia",
+          "label": "Britney",
+          "description": "Ut est ea eu do. Aliquip commodo dolor sit proident irure est exercitation dolor sint aliquip deserunt irure est. Quis nisi exercitation sint esse minim anim laborum eiusmod veniam et eiusmod excepteur culpa ullamco. Irure dolor proident adipisicing nisi nisi ad aliquip cupidatat occaecat anim laborum. Ut reprehenderit occaecat nostrud incididunt sit voluptate reprehenderit Lorem cillum consequat ex. Aliquip culpa labore et culpa.\r\n",
+          "type": "iot.Site",
+          "datatype": "Boolean",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "b659ebc7-7f91-4d9b-b0db-4321d323fa8b",
+          "name": "Gibson",
+          "label": "Garrett",
+          "description": "Laborum laborum dolor irure incididunt deserunt ea irure ex id duis. Velit labore ipsum nostrud adipisicing culpa ipsum veniam ut. Dolor incididunt nostrud quis non ullamco quis laboris aliquip commodo amet aliqua est labore reprehenderit. Mollit ad velit duis aliquip magna sint nisi ullamco Lorem proident. Sunt ex non culpa mollit ea do occaecat magna ipsum magna aliqua nisi. Lorem do excepteur veniam ad enim proident nulla enim nisi.\r\n",
+          "type": "hvac.VariableVolume",
+          "datatype": "NUmber",
+          "color": "#D11D72",
+          "graphtype": "node"
+        },
+        {
+          "id": "4064e80a-a662-4602-b783-fccb07ca813d",
+          "name": "Hancock",
+          "label": "Susie",
+          "description": "Irure et quis pariatur occaecat do tempor. Amet irure Lorem eiusmod magna occaecat sunt Lorem amet incididunt. Aliqua sit ea reprehenderit in duis. Ad dolor fugiat magna Lorem cillum nulla minim commodo proident sunt laboris.\r\n",
+          "type": "iot.Asset",
+          "datatype": "Boolean",
+          "color": "#f64700",
+          "graphtype": "node"
+        },
+        {
+          "id": "5e7c1563-4c8b-4a37-9af7-124fb5e89214",
+          "name": "Tisha",
+          "label": "Randi",
+          "description": "Ullamco officia voluptate cupidatat eiusmod consectetur proident adipisicing eiusmod exercitation anim minim. Aliqua ullamco proident nostrud irure id duis nostrud minim incididunt do elit adipisicing consequat. Proident elit veniam do aliqua. Veniam nulla cupidatat non enim amet. Nulla adipisicing do ut sint id elit enim magna enim sit aute adipisicing. Sint Lorem exercitation tempor in non consequat.\r\n",
+          "type": "iot.AttributeValue",
+          "datatype": "NUmber",
+          "color": "#FF8C4C",
+          "graphtype": "node"
+        },
+        {
+          "id": "66ed8199-e2c1-4ab0-a740-3144625238e1",
+          "name": "Gina",
+          "label": "Antonia",
+          "description": "Minim in aute tempor amet mollit cupidatat labore. Nulla et duis pariatur labore consectetur nulla deserunt. Velit duis duis sint eu ullamco. Fugiat nisi Lorem laboris officia tempor proident occaecat pariatur ut consequat consequat proident cillum.\r\n",
+          "type": "iot.Space",
+          "datatype": "enum",
+          "color": "#0090d9",
+          "graphtype": "node"
+        }
+    ],
+    "links": [
+        
+    ]
+}

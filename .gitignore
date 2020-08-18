@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Exclude yworks lib
+/yFiles/yFiles-for-HTML-Complete-2.3.0.2-*

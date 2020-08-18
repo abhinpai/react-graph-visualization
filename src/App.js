@@ -2,14 +2,13 @@ import React from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import GraphView from './components/GraphView/GraphView';
+import GraphContainer from './components/GraphContainer/GraphContainer';
 
 function App() {
   return (
     <div >
-      <Header />
-      
-      <GraphView />
+      <Header/>
+      <GraphContainer />
       <Footer />
     </div>
   );
