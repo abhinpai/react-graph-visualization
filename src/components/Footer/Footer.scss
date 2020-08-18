@@ -9,10 +9,11 @@
   justify-content: center;
 
   & span {
+    cursor: pointer;
     padding: 0 12px;
   }
 
-  & span:first-child {
+  & span:nth-child(2) {
     margin-left: auto;
   }
 }
