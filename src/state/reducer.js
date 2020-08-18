@@ -1,12 +1,28 @@
+import data100 from "../resources/100.json";
+import data500 from "../resources/500.json";
+
 export const intialState = {
   graph: null,
+  data: data100,
 };
 
 const reducer = (state, action) => {
-  console.log(action);
   switch (action.type) {
     case "SET_GRAPH_COMPONENT":
       return { ...state, graph: action.payload.graph };
+    case "SET_GRAPH_SIZE":
+      return getData(state, action.payload.size);
+    default:
+      return state;
+  }
+};
+
+const getData = (state, size) => {
+  switch (size) {
+    case "100":
+      return { ...state, data: data100 };
+    case "500":
+      return { ...state, data: data500 };
     default:
       return state;
   }

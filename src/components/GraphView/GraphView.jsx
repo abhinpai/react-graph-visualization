@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef } from "react";
+import React, { Component, useEffect, useRef, useState } from "react";
 import "./GraphView.scss";
 import "yfiles/yfiles.css";
 import initGraph from "../../utils/GraphInitializer";
@@ -49,9 +49,11 @@ import { useDataLayer } from "../../state/DataLayer";
 
 // Graphview functional component
 const GraphView = ({ graphData }) => {
+
   let divref = useRef(null);
   let graphComponent = null;
   const [{}, dispatch] = useDataLayer();
+
   useEffect(() => {
     graphComponent = initGraph(divref.current);
     graphComponent.graph = constructGraph(graphData);

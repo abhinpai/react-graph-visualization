@@ -1,4 +1,4 @@
-import { OrganicLayout } from "yfiles";
+import { OrganicLayout, LayoutExecutor, TimeSpan } from "yfiles";
 
 const initlizeGraphLayout = async (graphComponent) => {
   const layout = new OrganicLayout();
@@ -6,6 +6,7 @@ const initlizeGraphLayout = async (graphComponent) => {
   layout.nodeEdgeOverlapAvoided = true;
   layout.nodeOverlapsAllowed = true;
   layout.compactnessFactor = 0.4;
+
   await graphComponent.morphLayout({
     layout: layout,
     morphDuration: "1s",

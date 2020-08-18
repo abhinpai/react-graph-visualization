@@ -39,7 +39,6 @@ const bindDataToRelationshipDiv = (item) => {
   const description = document.getElementById("relationship-description");
   const source = document.getElementById("relationship-source");
   const target = document.getElementById("relationship-target");
-  console.log(item);
   name.textContent = item.tag.label ? item.tag.label : "Name not Set";
   description.textContent = item.tag.description
     ? item.tag.description
