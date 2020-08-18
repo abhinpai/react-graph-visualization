@@ -61,6 +61,7 @@ function ConfigurePane() {
         >
           <option value="100">100 Edges and Nodes</option>
           <option value="500">500 Edges and Nodes</option>
+          <option value="750">750 Edges and Nodes</option>
         </select>
       </div>
       <br />

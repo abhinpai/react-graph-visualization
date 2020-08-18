@@ -1,5 +1,6 @@
 import data100 from "../resources/100.json";
 import data500 from "../resources/500.json";
+import data750 from "../resources/750.json";
 
 export const intialState = {
   graph: null,
@@ -29,6 +30,8 @@ const getData = (state, size) => {
       return { ...state, data: data100 };
     case "500":
       return { ...state, data: data500 };
+    case "750":
+      return { ...state, data: data750 };
     default:
       return state;
   }
