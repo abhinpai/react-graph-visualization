@@ -26,17 +26,21 @@ export default class CustomNodeStyle extends NodeStyleBase {
       rect.setAttribute("class", this.cssClass);
     }
 
-    const zoom = renderContext.zoom;
-    if (zoom >= 0.7) {
-      rect.setAttribute("fill", "#FFC34E");
-      rect.setAttribute("stroke", "#FFC34E");
-    } else if (zoom >= 0.4) {
-      rect.setAttribute("fill", "#F6545C");
-      rect.setAttribute("stroke", "#F6545C");
-    } else {
-      rect.setAttribute("fill", "#0779e4");
-      rect.setAttribute("stroke", "#0779e4");
-    }
+    // Dynamically change the node color based on the zoom level
+    // const zoom = renderContext.zoom;
+    // if (zoom >= 0.7) {
+    //   rect.setAttribute("fill", "#FFC34E");
+    //   rect.setAttribute("stroke", "#FFC34E");
+    // } else if (zoom >= 0.4) {
+    //   rect.setAttribute("fill", "#F6545C");
+    //   rect.setAttribute("stroke", "#F6545C");
+    // } else {
+    //   rect.setAttribute("fill", "#0779e4");
+    //   rect.setAttribute("stroke", "#0779e4");
+    // }
+
+    rect.setAttribute("fill", "#F6545C");
+    rect.setAttribute("stroke", "#F6545C");
 
     rect["data-renderDataCache"] = {
       x: layout.x,
@@ -73,7 +77,7 @@ export default class CustomNodeStyle extends NodeStyleBase {
     loadIndicator.setAttribute("rx", "6");
     loadIndicator.setAttribute("ry", "6");
     loadIndicator.setAttribute("stroke-width", 1.5);
-    loadIndicator.setAttribute("stroke", "#3c4253");
+    loadIndicator.setAttribute("stroke", "#1a172f");
     loadIndicator.setAttribute("fill", indicatorColor);
     loadIndicator.setAttribute("transform", "translate(60,16)");
     g.appendChild(loadIndicator);
