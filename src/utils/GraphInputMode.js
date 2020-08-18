@@ -1,6 +1,6 @@
 import { GraphEditorInputMode } from "yfiles";
-import { zoomToLocation } from "./ZoomControlManager";
 import { showInspectorPanel } from "./InspectorPaneManager";
+import { zoomToLocation } from "./ZoomControlManager";
 
 const initlizeGraphInputMode = (graphComponent) => {
   const mode = new GraphEditorInputMode();

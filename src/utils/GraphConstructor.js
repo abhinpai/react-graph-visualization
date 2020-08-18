@@ -1,4 +1,4 @@
-import { GraphBuilder, FilteredGraphWrapper } from "yfiles";
+import { FilteredGraphWrapper, GraphBuilder } from "yfiles";
 import initlizeGraphLayout from "./GraphLayout";
 import initGraphStyle from "./GraphStyle";
 

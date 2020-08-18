@@ -1,5 +1,5 @@
-import { GraphComponent, Point, TimeSpan, INode, ICommand } from "yfiles";
-import { detectSafariVersion, detectiOSVersion } from "./Workarounds.js";
+import { ICommand, INode, Point, TimeSpan } from "yfiles";
+import { detectiOSVersion, detectSafariVersion } from "./Workarounds.js";
 
 export default class ContextMenu {
   constructor(graphComponent) {

@@ -1,8 +1,8 @@
+import { GraphComponent, License } from "yfiles";
 import LicenseFile from "../resources/license.json";
-import { License, GraphComponent } from "yfiles";
 import {
   LargeGraphModelManager,
-  OptimizationMode,
+  OptimizationMode
 } from "./LargeGraphModelManager";
 
 let graphComponent = null;

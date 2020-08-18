@@ -1,5 +1,10 @@
 import { NodeStyleBase, SvgVisual } from "yfiles";
-import { NODE_COLOR_3, NODE_COLOR_2, NODE_COLOR_1, PRIMARY_COLOR } from "./Constants";
+import {
+  NODE_COLOR_1,
+  NODE_COLOR_2,
+  NODE_COLOR_3,
+  PRIMARY_COLOR,
+} from "./Constants";
 
 export default class CustomNodeStyle extends NodeStyleBase {
   constructor() {
@@ -60,7 +65,11 @@ export default class CustomNodeStyle extends NodeStyleBase {
     if (node.tag.type === "iot.Element") {
       indicatorColor = "red";
     } else if (node.tag.type === "iot.Point") {
-      indicatorColor = "yellow";
+      indicatorColor = "#0090d9";
+    } else if (node.tag.type === "hvac.AirhandlingUnit") {
+      indicatorColor = "#960085";
+    } else if (node.tag.type === "hvac.Chiller") {
+      indicatorColor = "#fba800";
     } else {
       indicatorColor = "green";
     }

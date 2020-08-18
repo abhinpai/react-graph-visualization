@@ -1,4 +1,4 @@
-import { OrganicLayout, LayoutExecutor, TimeSpan } from "yfiles";
+import { OrganicLayout } from "yfiles";
 
 const initlizeGraphLayout = async (graphComponent) => {
   const layout = new OrganicLayout();
