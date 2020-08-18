@@ -22,4 +22,31 @@
   display: none;
 }
 
-
+/* Tooltips */
+.yfiles-tooltip {
+  background-color: #85a1c2;
+  color: black;
+  border-color: #85a1c2;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 12px;
+  font-weight: bold;
+}
+.yfiles-tooltip-entering {
+  transition: opacity 0.2s ease-in;
+}
+.yfiles-tooltip-enter {
+  opacity: 0;
+}
+.yfiles-tooltip-enter-to {
+  opacity: 1;
+}
+.yfiles-tooltip-leaving {
+  transition: opacity 0.2s ease-out;
+}
+.yfiles-tooltip-leave {
+  opacity: 1;
+}
+.yfiles-tooltip-leave-to {
+  opacity: 0;
+}

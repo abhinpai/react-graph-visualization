@@ -9,6 +9,7 @@ import initilizeGraphOverview from "../../utils/GraphOverview";
 import { showApp } from "../../utils/GraphManager";
 import { initlizeSearch } from "../../utils/GraphSearch";
 import { initializeZoomControls } from "../../utils/ZoomControlManager";
+import { initializeToolTip } from "../../utils/ToolTipManager";
 
 export default class GraphView extends Component {
   constructor(props) {
@@ -23,9 +24,9 @@ export default class GraphView extends Component {
     await initlizeGraphLayout(this.graphComponent);
     initlizeSearch(this.graphComponent);
     initializeZoomControls(this.graphComponent);
+    initializeToolTip(this.graphComponent);
     showApp(this.graphComponent, initilizeGraphOverview(this.graphComponent));
   }
-
 
   render() {
     return (
