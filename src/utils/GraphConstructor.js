@@ -1,11 +1,12 @@
-import { GraphBuilder } from "yfiles";
+import { GraphBuilder, FilteredGraphWrapper } from "yfiles";
 import initlizeGraphLayout from "./GraphLayout";
 import initGraphStyle from "./GraphStyle";
 
 let nodesSource = null;
 let edgesSource = null;
 let graphBuilder = null;
-const constructGraph = (graphData, reConstruct) => {
+
+const constructGraph = (graphData) => {
   graphBuilder = new GraphBuilder();
 
   initGraphStyle(graphBuilder.graph);
@@ -25,10 +26,24 @@ const constructGraph = (graphData, reConstruct) => {
 
 export default constructGraph;
 
-export const reConstructGraph = async (graphData, graphComponent) => {
-  console.log(graphData.nodes.length);
+export const updateGraph = async (graphData, graphComponent) => {
   graphBuilder.setData(edgesSource, graphData.edges);
   graphBuilder.setData(nodesSource, graphData.nodes);
   graphBuilder.updateGraph();
   await initlizeGraphLayout(graphComponent);
+};
+
+export const reConstructGraph = async (graphData, graphComponent) =>{
+  graphComponent.graph = constructGraph(graphData)
+  await initlizeGraphLayout(graphComponent)
+}
+
+export const filterGraphNodes = async (graphComponent, type) => {
+  const wrapper = new FilteredGraphWrapper(
+    graphBuilder.buildGraph(),
+    (node) => node.tag.type === type,
+    (edge) => true
+  );
+  graphComponent.graph = wrapper;
+  await initlizeGraphLayout(graphComponent)
 };

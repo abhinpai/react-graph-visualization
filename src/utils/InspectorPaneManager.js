@@ -54,7 +54,7 @@ const bindDataToNodeDiv = (item) => {
   const label = document.getElementById("node-label");
   const id = document.getElementById("node-id");
   const desc = document.getElementById("node-description");
-  const type = document.getElementById("node-type");
+  const type = document.getElementById("node-type"); 
   label.textContent = item.tag.label;
   id.textContent = item.tag.id;
   desc.textContent = item.tag.description;
