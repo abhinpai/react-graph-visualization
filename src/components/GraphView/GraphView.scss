@@ -50,3 +50,40 @@
 .yfiles-tooltip-leave-to {
   opacity: 0;
 }
+
+
+// Context Menu
+.demo-context-menu.visible {
+  opacity: 1;
+}
+.demo-context-menu.demo-context-menu-clone {
+  pointer-events: none;
+  transition: opacity 0.2s ease-out;
+}
+.demo-context-menu .demo-menu-item {
+  position: relative;
+  display: block;
+  padding: 8px 24px;
+  border: none;
+  border-bottom: 1px solid #d5d7d8;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.demo-context-menu:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.demo-context-menu .demo-menu-item:hover {
+  background-color: #dedede;
+}
+.demo-context-menu .demo-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #999999;
+}
+.demo-context-menu:last-child {
+  border-bottom: none;
+  border-radius: 0 0 4px 4px;
+}

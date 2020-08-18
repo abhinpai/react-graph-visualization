@@ -6,7 +6,6 @@ export const initializeToolTip = (graphComponent) => {
   mode.mouseHoverInputMode.toolTipLocationOffset = new Point(10, 10);
   mode.addQueryItemToolTipListener((_, args) => {
     if (INode.isInstance(args.item) && !args.handled) {
-        console.log(args.item.tag);
       const nodeName = args.item.tag.label;
       if (nodeName !== null) {
         args.toolTip = nodeName;
