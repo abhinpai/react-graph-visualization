@@ -5,13 +5,23 @@ import RemoveIcon from '@material-ui/icons/Remove';
 import CropFreeIcon from '@material-ui/icons/CropFree';
 
 function Footer() {
+
+  const show =() =>{
+    const inspectorPane = document.getElementById("inspector-pane");
+    inspectorPane.style.marginRight = "0";
+  }
+  
+  const hide =() =>{
+    const inspectorPane = document.getElementById("inspector-pane");
+    inspectorPane.style.marginRight = "-50%";
+  }
   return (
     <div className='footer'>
-      <span>
-        <AddIcon fontSize={'small'} />
+      <span> 
+        <AddIcon onClick={show} fontSize={'small'} />
       </span>
       <span>
-        <RemoveIcon fontSize={'small'} />
+        <RemoveIcon  onClick={hide} fontSize={'small'} />
       </span>
       <span>
         <CropFreeIcon fontSize={'small'} />

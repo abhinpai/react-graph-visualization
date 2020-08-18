@@ -3,7 +3,7 @@ import './InspectorPane.scss';
 
 function InspectorPane() {
   return (
-    <div className='inspectorPane'>
+    <div className='inspectorPane' id="inspector-pane">
       <p className='inspectorPane__header'>Inspector Panel</p>
       <div className='properties' id='node-view'>
         <p className='properties__title'>
