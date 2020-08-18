@@ -11,7 +11,7 @@
   -moz-box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
   box-shadow: -10px 0px 10px -20px rgba(0, 0, 0, 0.75);
   overflow: auto;
-  margin-right: 0;
+  margin-right: -50%;
   transition: margin-right 0.8s ease-in;
 
   &__header {

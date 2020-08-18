@@ -1,4 +1,6 @@
 import { GraphEditorInputMode } from "yfiles";
+import { zoomToLocation } from "./ZoomControlManager";
+import { showInspectorPanel } from "./InspectorPaneManager";
 
 const initlizeGraphInputMode = (graphComponent) => {
   const mode = new GraphEditorInputMode();
@@ -8,13 +10,12 @@ const initlizeGraphInputMode = (graphComponent) => {
   mode.lassoSelectionInputMode.enabled = false;
 
   mode.addCanvasClickedListener((_, args) => {
-    // this.showInspectorPanel(args.item);
+    showInspectorPanel(args.item);
   });
 
   mode.addItemLeftClickedListener((_, args) => {
-    // this.showInspectorPanel(args.item);
-    // zoomToLocation(args.item, this.graphComponent);
-    // this.highlightClickedItem(args.item);
+    showInspectorPanel(args.item, graphComponent);
+    zoomToLocation(args.item, graphComponent);
   });
 
   graphComponent.graph.decorator.nodeDecorator.reshapeHandleProviderDecorator.hideImplementation();

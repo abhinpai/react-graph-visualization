@@ -1,11 +1,16 @@
-import React from 'react';
-import './Header.scss';
+import React from "react";
+import "./Header.scss";
+import { searchNode } from "../../utils/GraphSearch";
 
 function Header() {
   return (
-    <div className='header'>
+    <div className="header">
       <h2>Graph Visualizer</h2>
-      <input type='text' placeholder='Search node' />
+      <input
+        type="text"
+        placeholder="Search node"
+        onChange={(event) => searchNode(event.target.value)}
+      />
     </div>
   );
 }
