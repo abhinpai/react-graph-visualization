@@ -1,10 +1,10 @@
-.graphContainer{
-    display: flex;
-    height: calc(100vh - 4rem);
-    top: 3rem;
-    position: relative;;
+.graphContainer {
+  display: flex;
+  height: calc(100vh - 4rem);
+  top: 3rem;
+  position: relative;
 
-    &__graph{
-        flex: auto;
-    }
+  &__graph {
+    flex: auto 0px; 
+  }
 }

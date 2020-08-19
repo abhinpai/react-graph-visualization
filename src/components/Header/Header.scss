@@ -4,7 +4,7 @@
   height: 3rem;
   width: 100%;
   position: fixed;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-left: 12px;
 
@@ -23,5 +23,24 @@
     padding: 8px;
     padding-left: 12px;
     border-color: transparent;
+  }
+
+  & .undo-redo {
+    display: flex;
+    margin-left: auto;
+    & span {
+      cursor: pointer;
+      background: #241f39;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin-right: 4px;
+      display: flex;
+    align-items: center;
+    }
+
+    & span:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s ease-in;
+    }
   }
 }

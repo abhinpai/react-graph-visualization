@@ -12,6 +12,7 @@ import { initializeZoomControls } from "../../utils/ZoomControlManager";
 import { initializeToolTip } from "../../utils/ToolTipManager";
 import { configureContextMenu } from "../../utils/ContextMenuManager";
 import { useDataLayer } from "../../state/DataLayer";
+import { initializeUndoRedo } from "../../utils/GraphUndoRedo";
 
 // Graphview class component
 // export default class GraphView extends Component {
@@ -67,6 +68,7 @@ const GraphView = ({ graphData }) => {
     initializeZoomControls(graphComponent);
     initializeToolTip(graphComponent);
     configureContextMenu(graphComponent);
+    initializeUndoRedo(graphComponent);
     showApp(graphComponent, initilizeGraphOverview(graphComponent));
     dispatch({
       type: "SET_GRAPH_COMPONENT",

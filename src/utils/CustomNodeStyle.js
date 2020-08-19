@@ -66,8 +66,6 @@ export default class CustomNodeStyle extends NodeStyleBase {
       indicatorColor = "red";
     } else if (node.tag.type === "iot.Point") {
       indicatorColor = "#0090d9";
-    } else if (node.tag.type === "hvac.AirhandlingUnit") {
-      indicatorColor = "#960085";
     } else if (node.tag.type === "hvac.Chiller") {
       indicatorColor = "#fba800";
     } else {
