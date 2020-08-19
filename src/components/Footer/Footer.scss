@@ -13,6 +13,11 @@
     padding: 0 12px;
   }
 
+  & span:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease-in;
+  }
+
   & span:nth-child(2) {
     margin-left: auto;
   }

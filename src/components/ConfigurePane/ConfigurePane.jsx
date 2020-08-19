@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ConfigurePane.scss";
 import { useDataLayer } from "../../state/DataLayer";
 import { updateGraph, filterGraphNodes, reConstructGraph } from "../../utils/GraphConstructor";
+import { hide as hideInspectorPane} from "../../utils/InspectorPaneManager";
 
 function ConfigurePane() {
   const [{ data, graph, nodeClass }, dispatch] = useDataLayer();
@@ -57,6 +58,7 @@ function ConfigurePane() {
         <select
           name="Node & Edges"
           id="graph-size"
+          onClick={hideInspectorPane}
           onChange={(event) => selectedSize(event.target.value)}
         >
           <option value="100">100 Edges and Nodes</option>
@@ -70,6 +72,7 @@ function ConfigurePane() {
         <select
           name="Filter by class"
           id="nodes-type"
+          onClick={hideInspectorPane}
           onChange={(event) => filterGraph(event.target.value)}
         >
           {classes.map((x, index) => (

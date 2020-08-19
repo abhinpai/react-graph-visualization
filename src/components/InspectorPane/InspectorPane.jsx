@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import "./InspectorPane.scss";
-import { initilizeInspectorPane } from "../../utils/InspectorPaneManager";
+import {
+  initilizeInspectorPane,
+  hide as hideInspectorPane,
+} from "../../utils/InspectorPaneManager";
+import CancelIcon from "@material-ui/icons/Cancel";
 
 function InspectorPane() {
   useEffect(() => {
@@ -9,7 +13,12 @@ function InspectorPane() {
 
   return (
     <div className="inspectorPane" id="inspector-pane">
-      <p className="inspectorPane__header">Inspector Panel</p>
+      <p className="inspectorPane__header">
+        Inspector Panel
+        <span onClick={hideInspectorPane}>
+          <CancelIcon fontSize={"small"} />
+        </span>
+      </p>
       <div className="properties" id="node-view">
         <p className="properties__title">
           Node Id <br />
@@ -47,10 +56,7 @@ function InspectorPane() {
         </p>
         <p className="properties__title">
           Target Node <br />
-          <span
-            id="relationship-target"
-            className="properties__value"
-          ></span>
+          <span id="relationship-target" className="properties__value"></span>
         </p>
       </div>
     </div>

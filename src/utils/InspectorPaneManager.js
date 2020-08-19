@@ -27,7 +27,7 @@ const show = () => {
   inspectorPanel.style.marginRight = "0";
 };
 
-const hide = () => {
+export const hide = () => {
   inspectorPanel.style.marginRight = "-50%";
 };
 

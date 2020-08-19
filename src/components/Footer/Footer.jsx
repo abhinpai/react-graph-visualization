@@ -6,13 +6,14 @@ import React from "react";
 import { useDataLayer } from "../../state/DataLayer";
 import { exportSVGGraph } from "../../utils/GraphExport";
 import "./Footer.scss";
+import { hide as hideInspectorPane } from "../../utils/InspectorPaneManager";
 
 function Footer() {
   const [{ graph }] = useDataLayer();
 
   return (
     <div className="footer">
-      <span onClick={() => exportSVGGraph(graph)}>
+      <span onClick={(() => exportSVGGraph(graph), hideInspectorPane)}>
         <SystemUpdateAltIcon fontSize={"small"} />
       </span>
       <span data-command="ZoomIn">
@@ -21,7 +22,7 @@ function Footer() {
       <span data-command="ZoomOut">
         <RemoveIcon fontSize={"small"} />
       </span>
-      <span data-command="ZoomRest">
+      <span data-command="ZoomRest" onClick={hideInspectorPane}>
         <CropFreeIcon fontSize={"small"} />
       </span>
     </div>

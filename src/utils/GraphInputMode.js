@@ -15,7 +15,9 @@ const initlizeGraphInputMode = (graphComponent) => {
 
   mode.addItemLeftClickedListener((_, args) => {
     showInspectorPanel(args.item, graphComponent);
-    zoomToLocation(args.item, graphComponent);
+    
+    // onclick of node zoom to the clicked location
+    // zoomToLocation(args.item, graphComponent);
   });
 
   graphComponent.graph.decorator.nodeDecorator.reshapeHandleProviderDecorator.hideImplementation();
