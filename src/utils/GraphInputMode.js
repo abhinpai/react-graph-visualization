@@ -1,27 +1,31 @@
-import { GraphEditorInputMode } from "yfiles";
+import { GraphEditorInputMode, GraphItemTypes } from "yfiles";
 import { showInspectorPanel } from "./InspectorPaneManager";
 import { zoomToLocation } from "./ZoomControlManager";
 
 const initlizeGraphInputMode = (graphComponent) => {
   const mode = new GraphEditorInputMode();
-  mode.allowCreateEdge = false;
-  mode.allowAddLabel = false;
-  mode.allowCreateNode = false;
-  mode.lassoSelectionInputMode.enabled = false;
 
   mode.addCanvasClickedListener((_, args) => {
     showInspectorPanel(args.item);
   });
 
   mode.addItemLeftClickedListener((_, args) => {
-    showInspectorPanel(args.item, graphComponent);
-    
+    // showInspectorPanel(args.item, graphComponent);
     // onclick of node zoom to the clicked location
     // zoomToLocation(args.item, graphComponent);
   });
 
-  graphComponent.graph.decorator.nodeDecorator.reshapeHandleProviderDecorator.hideImplementation();
-
   graphComponent.inputMode = mode;
+  disableDefaultGraphFeature(graphComponent);
+};
+
+export const disableDefaultGraphFeature = (graphComponent) => {
+  const mode = graphComponent.inputMode;
+  mode.allowCreateEdge = false;
+  mode.allowAddLabel = false;
+  mode.allowCreateNode = false;
+  mode.lassoSelectionInputMode.enabled = false;
+  mode.labelEditableItems = GraphItemTypes.NONE;
+  graphComponent.graph.decorator.nodeDecorator.reshapeHandleProviderDecorator.hideImplementation();
 };
 export default initlizeGraphInputMode;

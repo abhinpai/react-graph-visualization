@@ -1,6 +1,6 @@
-import { zoomToLocation } from "./ZoomControlManager";
-import { ShapeNodeStyle, ShapeNodeShape, Fill, NodeStyleDecorationInstaller } from "yfiles";
+import { Fill, NodeStyleDecorationInstaller, ShapeNodeStyle } from "yfiles";
 import { NODE_COLOR_1 } from "./Constants";
+import { zoomToLocation } from "./ZoomControlManager";
 
 let graphComponent = null;
 
@@ -32,8 +32,9 @@ export const searchNode = (query) => {
   }
 };
 
-const matches = (node, text) => {
-  return node.labels.some(
-    (label) => label.text.toLowerCase().indexOf(text.toLowerCase()) !== -1
+const matches = (node, query) => {
+  const property = Object.values(node.tag);
+  return property.some(
+    (label) => label.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 };
