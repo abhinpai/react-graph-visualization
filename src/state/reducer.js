@@ -1,10 +1,11 @@
 import data100 from "../resources/100.json";
 import data500 from "../resources/500.json";
 import data750 from "../resources/750.json";
+import simple from "../resources/simple.json";
 
 export const intialState = {
   graph: null,
-  data: data100,
+  data: simple,
   nodeClass: "All",
   builder: null,
 };
@@ -32,6 +33,8 @@ const getData = (state, size) => {
       return { ...state, data: data500 };
     case "750":
       return { ...state, data: data750 };
+    case "2":
+      return { ...state, data: simple };
     default:
       return state;
   }

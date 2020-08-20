@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./ConfigurePane.scss";
 import { useDataLayer } from "../../state/DataLayer";
-import { updateGraph, filterGraphNodes, reConstructGraph } from "../../utils/GraphConstructor";
-import { hide as hideInspectorPane} from "../../utils/InspectorPaneManager";
+import {
+  updateGraph,
+  filterGraphNodes,
+  reConstructGraph,
+} from "../../utils/GraphConstructor";
+import { hide as hideInspectorPane } from "../../utils/InspectorPaneManager";
 
 function ConfigurePane() {
   const [{ data, graph, nodeClass }, dispatch] = useDataLayer();
@@ -45,10 +49,10 @@ function ConfigurePane() {
       setLoad({ ...load, type: false });
       return;
     }
-    if(nodeClass === "All"){
+    if (nodeClass === "All") {
       reConstructGraph(data, graph);
-    }else{
-      filterGraphNodes(graph, nodeClass)
+    } else {
+      filterGraphNodes(graph, nodeClass);
     }
   }, [nodeClass]);
 
@@ -61,6 +65,7 @@ function ConfigurePane() {
           onClick={hideInspectorPane}
           onChange={(event) => selectedSize(event.target.value)}
         >
+          <option value="2">1 Edges and 2 Nodes</option>
           <option value="100">100 Edges and Nodes</option>
           <option value="500">500 Edges and Nodes</option>
           <option value="750">750 Edges and Nodes</option>

@@ -1,15 +1,11 @@
 import { NodeStyleBase, SvgVisual } from "yfiles";
-import {
-  NODE_COLOR_1,
-  NODE_COLOR_2,
-  NODE_COLOR_3,
-  PRIMARY_COLOR,
-} from "./Constants";
+import { NODE_COLOR_1, NODE_COLOR_2, NODE_COLOR_3 } from "./Constants";
 
 export default class CustomNodeStyle extends NodeStyleBase {
   constructor() {
     super();
     this.cssClass = "";
+    this.imageUrl = "https://image.flaticon.com/icons/svg/908/908591.svg";
   }
 
   createVisual(renderContext, node) {
@@ -36,8 +32,8 @@ export default class CustomNodeStyle extends NodeStyleBase {
     const zoom = renderContext.zoom;
     // this.dynamicNodecolor(zoom, rect);
 
-    rect.setAttribute("fill", NODE_COLOR_1);
-    rect.setAttribute("stroke", NODE_COLOR_1);
+    rect.setAttribute("fill", NODE_COLOR_3);
+    rect.setAttribute("stroke", NODE_COLOR_3);
 
     rect["data-renderDataCache"] = {
       x: layout.x,
@@ -49,8 +45,27 @@ export default class CustomNodeStyle extends NodeStyleBase {
 
     g.setAttribute("transform", "translate(" + layout.x + " " + layout.y + ")");
     this.addLoadIndicator(node, g);
+    this.addDecoratorImage(node, g);
 
     return new SvgVisual(g);
+  }
+
+  addDecoratorImage(node, g) {
+    const decoratorImage = window.document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "image"
+    );
+    // decoratorImage.setAttribute("src", this.imageUrl);
+    decoratorImage.setAttribute("height", "16");
+    decoratorImage.setAttribute("width", "16");
+    decoratorImage.setAttribute("id", "indicator");
+    decoratorImage.setAttribute("href", this.imageUrl);
+    decoratorImage.setAttribute("cx", 0);
+    decoratorImage.setAttribute("cy", 0);
+    decoratorImage.setAttribute("rx", "6");
+    decoratorImage.setAttribute("ry", "6");
+    decoratorImage.setAttribute("transform", `translate(6, 8)`);
+    g.appendChild(decoratorImage);
   }
 
   // This method is responsible to add the custom decorator to the node
@@ -59,8 +74,7 @@ export default class CustomNodeStyle extends NodeStyleBase {
       "http://www.w3.org/2000/svg",
       "ellipse"
     );
-
-    let indicatorColor;
+    let indicatorColor = null;
 
     if (node.tag.type === "iot.Element") {
       indicatorColor = "red";
@@ -69,16 +83,18 @@ export default class CustomNodeStyle extends NodeStyleBase {
     } else if (node.tag.type === "hvac.Chiller") {
       indicatorColor = "#fba800";
     } else {
-      indicatorColor = "green";
+      indicatorColor = "#83f52c";
     }
     loadIndicator.setAttribute("cx", 0);
     loadIndicator.setAttribute("cy", 0);
     loadIndicator.setAttribute("rx", "6");
     loadIndicator.setAttribute("ry", "6");
     loadIndicator.setAttribute("stroke-width", 1.5);
-    loadIndicator.setAttribute("stroke", PRIMARY_COLOR);
     loadIndicator.setAttribute("fill", indicatorColor);
-    loadIndicator.setAttribute("transform", "translate(60,16)");
+    loadIndicator.setAttribute(
+      "transform",
+      `translate(${node.layout.width - 15}, 16)`
+    );
     g.appendChild(loadIndicator);
   }
 

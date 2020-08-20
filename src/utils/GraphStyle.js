@@ -3,34 +3,32 @@ import {
   ArrowType,
   DefaultLabelStyle,
   Fill,
-  Font,
-  HorizontalTextAlignment,
+  InteriorLabelModel,
   InteriorStretchLabelModel,
   InteriorStretchLabelModelPosition,
+  MarkupLabelStyle,
   PolylineEdgeStyle,
   Size,
+  SmartEdgeLabelModel,
   Stroke,
-  TextWrapping,
-  VerticalTextAlignment,
 } from "yfiles";
+import { INTERMEDIATE_NODE_HEIGHT, INTERMEDIATE_NODE_WIDTH } from "./Constants";
 import CustomNodeStyle from "./CustomNodeStyle";
 
-const initGraphStyle = (graph) => {
-  const customNodeStyle = new CustomNodeStyle();
-  const centerLabelModel = new InteriorStretchLabelModel({ insets: 5 });
-  const centerParameter = centerLabelModel.createParameter(
-    InteriorStretchLabelModelPosition.CENTER
-  );
-  graph.nodeDefaults.size = new Size(60, 60);
+export const initGraphStyle = (graph, nodesSource, edgeSource) => {
+  setNodeStyle(graph);
+  setNodeLabelStyle(graph, nodesSource);
+  setEdgeStyle(graph);
+};
 
-  graph.nodeDefaults.style = customNodeStyle;
-  graph.nodeDefaults.labels.style = new DefaultLabelStyle({
-    textFill: "#fff",
-    font: new Font("Robot, sans-serif", 14),
-    wrapping: TextWrapping.CHARACTER_ELLIPSIS,
-    verticalTextAlignment: VerticalTextAlignment.CENTER,
-    horizontalTextAlignment: HorizontalTextAlignment.CENTER,
+const setEdgeStyle = (graph) => {
+  graph.edgeDefaults.labels.style = new DefaultLabelStyle({
+    textFill: "#b8b8b8",
   });
+
+  graph.edgeDefaults.labels.layoutParameter = new SmartEdgeLabelModel({
+    autoRotation: true,
+  }).createParameterFromSource(0, 10.0, 0.5);
 
   const sourceArrowStyle = new Arrow({
     type: ArrowType.CIRCLE,
@@ -51,6 +49,60 @@ const initGraphStyle = (graph) => {
     sourceArrow: sourceArrowStyle,
     targetArrow: targetArrowStyle,
   });
-  graph.nodeDefaults.labels.layoutParameter = centerParameter;
 };
-export default initGraphStyle;
+
+const setNodeStyle = (graph) => {
+  const customNodeStyle = new CustomNodeStyle();
+  graph.nodeDefaults.size = getNodeStyle(
+    INTERMEDIATE_NODE_WIDTH,
+    INTERMEDIATE_NODE_HEIGHT
+  );
+  graph.nodeDefaults.style = customNodeStyle;
+};
+
+const setNodeLabelStyle = (graph, nodesSource) => {
+  const centerLabelModel = new InteriorStretchLabelModel({ insets: 5 });
+  const centerParameter = centerLabelModel.createParameter(
+    InteriorStretchLabelModelPosition.CENTER
+  );
+  graph.nodeDefaults.labels.layoutParameter = centerParameter;
+  const labelCreator = nodesSource.nodeCreator.createLabelsSource((data) => [
+    { label: data.label },
+    { type: `<span style="letter-spacing: 0.6px;">${data.type}</span>` },
+    { datatype: data.datatype },
+    { description: data.description },
+  ]).labelCreator;
+
+  labelCreator.textProvider = (data) => data.label || data.type;
+
+  labelCreator.layoutParameterProvider = (data) => {
+    if (data.type) {
+      return InteriorLabelModel.WEST;
+    }
+    return InteriorLabelModel.WEST;
+  };
+
+  labelCreator.styleProvider = (data) => {
+    if (data.type) {
+      return contetLabelStyle;
+    }
+    return headerLabelStyle;
+  };
+};
+
+const headerLabelStyle = new MarkupLabelStyle({
+  font: "14px Tahoma",
+  textFill: "white",
+  wrapping: "word-ellipsis",
+  horizontalTextAlignment: "Left",
+  insets: [6, 0, 0, 6],
+});
+
+const contetLabelStyle = new MarkupLabelStyle({
+  font: "10px Tahoma",
+  wrapping: "word-ellipsis",
+  textFill: "#b8b8b8",
+  insets: [40, 0, 0, 6],
+});
+
+const getNodeStyle = (width, height) => new Size(width, height);

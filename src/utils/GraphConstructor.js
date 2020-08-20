@@ -1,6 +1,6 @@
 import { FilteredGraphWrapper, GraphBuilder } from "yfiles";
 import initlizeGraphLayout from "./GraphLayout";
-import initGraphStyle from "./GraphStyle";
+import { initGraphStyle } from "./GraphStyle";
 
 let nodesSource = null;
 let edgesSource = null;
@@ -9,18 +9,20 @@ let graphBuilder = null;
 const constructGraph = (graphData) => {
   graphBuilder = new GraphBuilder();
 
-  initGraphStyle(graphBuilder.graph);
   nodesSource = graphBuilder.createNodesSource({
     data: graphData.nodes,
     id: "id",
-    labels: ["label"],
     tag: (data) => data,
   });
+
   edgesSource = graphBuilder.createEdgesSource({
     data: graphData.edges,
     sourceId: "from",
     targetId: "to",
+    labels: (data) => data.name || data.type,
   });
+
+  initGraphStyle(graphBuilder.graph, nodesSource, edgesSource);
   return graphBuilder.buildGraph();
 };
 
@@ -33,10 +35,10 @@ export const updateGraph = async (graphData, graphComponent) => {
   await initlizeGraphLayout(graphComponent);
 };
 
-export const reConstructGraph = async (graphData, graphComponent) =>{
-  graphComponent.graph = constructGraph(graphData)
-  await initlizeGraphLayout(graphComponent)
-}
+export const reConstructGraph = async (graphData, graphComponent) => {
+  graphComponent.graph = constructGraph(graphData);
+  await initlizeGraphLayout(graphComponent);
+};
 
 export const filterGraphNodes = async (graphComponent, type) => {
   const wrapper = new FilteredGraphWrapper(
@@ -45,5 +47,5 @@ export const filterGraphNodes = async (graphComponent, type) => {
     (edge) => true
   );
   graphComponent.graph = wrapper;
-  await initlizeGraphLayout(graphComponent)
+  await initlizeGraphLayout(graphComponent);
 };

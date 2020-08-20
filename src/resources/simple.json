@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "id": "fe9f3712-000f-4396-99c3-a7dbf96ae752",
+      "name": "Air Sensor",
+      "label": "Asset Label",
+      "description": "Commodo excepteur officia laborum ad. Aliqua sunt ullamco occaecat laborum Lorem anim. Magna culpa ad reprehenderit amet in nostrud dolor quis deserunt nulla nulla. Et aliquip est proident labore tempor.\r\n",
+      "type": "iot.Asset",
+      "datatype": "Boolean",
+      "color": "#0090d9",
+      "graphtype": "node"
+    },
+
+    {
+      "id": "gt9r43712-000f-4396-99c3-a7dbf96ae052",
+      "name": "Space:9A ",
+      "label": "Space Label",
+      "description": "Commodo excepteur officia laborum ad. Aliqua sunt ullamco occaecat laborum Lorem anim. Magna culpa ad reprehenderit amet in nostrud dolor quis deserunt nulla nulla. Et aliquip est proident labore tempor.\r\n",
+      "type": "iot.SpatialElement",
+      "datatype": "Boolean",
+      "color": "#0090d9",
+      "graphtype": "node"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fe9f3712-000f-4396-99c3-a7dbf96ae752",
+      "to": "gt9r43712-000f-4396-99c3-a7dbf96ae052",
+      "type": "relationship",
+      "name": "iot.IS_LOCATED_IN"
+    }
+  ]
+}
