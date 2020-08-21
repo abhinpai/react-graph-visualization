@@ -5,6 +5,7 @@ import { initGraphStyle } from "./GraphStyle";
 let nodesSource = null;
 let edgesSource = null;
 let graphBuilder = null;
+let tempGraph = null;
 
 const constructGraph = (graphData) => {
   graphBuilder = new GraphBuilder();
@@ -23,7 +24,8 @@ const constructGraph = (graphData) => {
   });
 
   initGraphStyle(graphBuilder.graph, nodesSource, edgesSource);
-  return graphBuilder.buildGraph();
+  tempGraph = graphBuilder.buildGraph();
+  return tempGraph;
 };
 
 export default constructGraph;
@@ -42,10 +44,11 @@ export const reConstructGraph = async (graphData, graphComponent) => {
 
 export const filterGraphNodes = async (graphComponent, type) => {
   const wrapper = new FilteredGraphWrapper(
-    graphBuilder.buildGraph(),
+    tempGraph,
     (node) => node.tag.type === type,
     (edge) => true
   );
+  console.log(wrapper.nodes);
   graphComponent.graph = wrapper;
   await initlizeGraphLayout(graphComponent);
 };
